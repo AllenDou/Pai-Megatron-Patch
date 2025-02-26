@@ -1,11 +1,11 @@
 cd /nasmnt/megatron
-mkdir qwen-ckpts
+mkdir -p qwen-ckpts
 cd qwen-ckpts
 wget https://atp-modelzoo-wlcb-pai.oss-cn-wulanchabu.aliyuncs.com/release/models/pai-megatron-patch/qwen-ckpts/Qwen2.5-0.5B.tar.gz
 tar -zxf Qwen2.5-0.5B.tar.gz
 
 cd /nasmnt/megatron
-mkdir qwen-datasets
+mkdir -p qwen-datasets
 cd qwen-datasets
 wget https://atp-modelzoo-wlcb-pai.oss-cn-wulanchabu.aliyuncs.com/release/models/pai-megatron-patch/qwen-datasets/wudao_qwenbpe_text_document.bin
 wget https://atp-modelzoo-wlcb-pai.oss-cn-wulanchabu.aliyuncs.com/release/models/pai-megatron-patch/qwen-datasets/wudao_qwenbpe_text_document.idx
@@ -24,3 +24,10 @@ wget https://atp-modelzoo-wlcb-pai.oss-cn-wulanchabu.aliyuncs.com/release/models
 tar -xvzf cmmlu.tgz
 tar -xvzf ceval.tgz
 tar -xvzf evaluate.tgz
+
+ln -s /nasmnt/megatron/cmmlu /workspace/
+ln -s /nasmnt/megatron/ceval /workspace/
+
+cd /workspace/
+wget http://easynlp-dev.oss-cn-zhangjiakou.aliyuncs.com/225247/Pai-Megatron-Patch/code/evaluate.tgz
+tar -zxvf evaluate.tgz
