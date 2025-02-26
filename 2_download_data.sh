@@ -27,7 +27,8 @@ tar -xvzf evaluate.tgz
 
 ln -s /nasmnt/megatron/cmmlu /workspace/
 ln -s /nasmnt/megatron/ceval /workspace/
+ln -s /nasmnt/megatron/evaluate /workspace/
 
-cd /workspace/
-wget http://easynlp-dev.oss-cn-zhangjiakou.aliyuncs.com/225247/Pai-Megatron-Patch/code/evaluate.tgz
-tar -zxvf evaluate.tgz
+#cd /workspace/
+#wget http://easynlp-dev.oss-cn-zhangjiakou.aliyuncs.com/225247/Pai-Megatron-Patch/code/evaluate.tgz
+#tar -zxvf evaluate.tgz
