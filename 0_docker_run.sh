@@ -5,5 +5,5 @@ docker run -it \
     --workdir /root/Pai-Megatron-Patch/ \
     -v /mnt:/mnt \
     -v /nasmnt:/nasmnt \
-    -v /root/Pai-Megatron-Patch/:/root/Pai-Megatron-Patch/ \
+    -v /root/Pai-Megatron-Patch_allendou/:/root/Pai-Megatron-Patch/ \
     dsw-registry.cn-wulanchabu.cr.aliyuncs.com/pai/pai-megatron-patch:25.01
