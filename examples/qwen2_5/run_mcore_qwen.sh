@@ -423,5 +423,6 @@ run_cmd="torchrun $DISTRIBUTED_ARGS ../qwen2/pretrain_qwen.py
  ${do_options} ${sp_options} ${gqa_options} ${offload_option} ${comm_overlap_option} ${sft_option}  ${tie_option} ${vp_options} ${packing_options}"
 
 echo ${run_cmd}
+sleep 3
 eval ${run_cmd}
 set +x
