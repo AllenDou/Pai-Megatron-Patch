@@ -1,13 +1,10 @@
-docker run -it \
-    --gpus=all \
-    --ipc=host \
-    --network=host \
+docker run -it --gpus=all --ipc=host --network=host \
     --workdir /root/Pai-Megatron-Patch/ \
     -v /root/.gitconfig:/root/.gitconfig \
     -v /mnt:/mnt \
     -v /nasmnt:/nasmnt \
     -v /root/Pai-Megatron-Patch_allendou/:/root/Pai-Megatron-Patch/ \
-    dsw-registry.cn-wulanchabu.cr.aliyuncs.com/pai/pai-megatron-patch:25.01
+    dsw-registry.cn-wulanchabu.cr.aliyuncs.com/pai/pai-megatron-patch:25.01 /bin/bash
 
 # dsw-registry.cn-wulanchabu.cr.aliyuncs.com/pai/pai-megatron-patch:25.01
 
