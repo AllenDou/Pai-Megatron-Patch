@@ -1,0 +1,1 @@
+examples/qwen2_5/run_mcore_qwen.sh
