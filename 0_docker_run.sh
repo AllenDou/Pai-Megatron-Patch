@@ -6,7 +6,7 @@ docker run -it \
     -v /mnt:/mnt \
     -v /nasmnt:/nasmnt \
     -v /root/Pai-Megatron-Patch_allendou/:/root/Pai-Megatron-Patch/ \
-    datascience-registry.cn-beijing.cr.aliyuncs.com/nvidia/pytorch:25.01-py3
+    dsw-registry.cn-wulanchabu.cr.aliyuncs.com/pai/pai-megatron-patch:25.01
 
 # dsw-registry.cn-wulanchabu.cr.aliyuncs.com/pai/pai-megatron-patch:25.01
 
