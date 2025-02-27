@@ -29,6 +29,3 @@ ln -sf /nasmnt/megatron/cmmlu /workspace/
 ln -sf /nasmnt/megatron/ceval /workspace/
 ln -sf /nasmnt/megatron/evaluate /workspace/
 
-#cd /workspace/
-#wget http://easynlp-dev.oss-cn-zhangjiakou.aliyuncs.com/225247/Pai-Megatron-Patch/code/evaluate.tgz
-#tar -zxvf evaluate.tgz
