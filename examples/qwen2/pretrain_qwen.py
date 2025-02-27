@@ -78,7 +78,6 @@ def model_provider(
 if __name__ == "__main__":
     from megatron_patch.template.helper import forward_step
     train_valid_test_datasets_provider.is_distributed = True
-    import pdb; pdb.set_trace()
     pretrain(
         train_valid_test_datasets_provider,
         model_provider,
