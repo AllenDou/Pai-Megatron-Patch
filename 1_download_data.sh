@@ -25,7 +25,3 @@ tar -xvzf cmmlu.tgz
 tar -xvzf ceval.tgz
 tar -xvzf evaluate.tgz
 
-ln -sf /nasmnt/megatron/cmmlu /workspace/
-ln -sf /nasmnt/megatron/ceval /workspace/
-ln -sf /nasmnt/megatron/evaluate /workspace/
-
