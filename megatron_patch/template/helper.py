@@ -178,7 +178,7 @@ def loss_func(loss_mask: torch.Tensor, num_seqs: torch.Tensor, output_tensor: to
         )
 
     averaged_loss = average_losses_across_data_parallel_group(loss)
-    averaged_loss = averaged_loss[0] / averaged_loss[1]
+    averaged_loss = averaged_loss[0] / averaged_loss[1] # average loss[1]是128,也就是字符
 
     # NOTE: The grad will be scaled down by CP size later, should not remove this multilication factor
     # LINK: https://github.com/NVIDIA/Megatron-LM/issues/906
@@ -200,6 +200,7 @@ def forward_step(data_iterator, model):
 
     # Get the batch.
     timers("batch-generator", log_level=2).start()
+    #import pdb;pdb.set_trace()
     tokens, labels, loss_mask, attention_mask, position_ids, num_seqs, packed_seq_params = get_batch(data_iterator)
     timers("batch-generator").stop()
     output_tensor = model(tokens, position_ids, attention_mask, labels=labels, packed_seq_params=packed_seq_params)
