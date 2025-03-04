@@ -17,9 +17,8 @@ loss = loss_fn(output, y)
 
 # 计算梯度
 loss.backward()
-import pdb; pdb.set_trace()
 optimizer.step()
-import pdb; pdb.set_trace()
+optimizer.zero_grad()
 
 # 查看 Adam 里的 一阶矩（exp_avg） 和 二阶矩（exp_avg_sq）
 for param in model.parameters():
