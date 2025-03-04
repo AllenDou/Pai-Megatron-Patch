@@ -26,6 +26,12 @@ elif [ $ENV = dlc ]; then
     NNODES=${WORLD_SIZE}
     NODE_RANK=${RANK}
     GPUS_PER_NODE=${KUBERNETES_CONTAINER_RESOURCE_GPU}
+elif [ $ENV = aliyunecs ]; then
+    NNODES=2
+    NODE_RANK=0
+    GPUS_PER_NODE=1
+    MASTER_ADDR=192.168.0.241
+    MASTER_PORT=29500
 fi
 
 if [ -z ${MP_VP} ]; then

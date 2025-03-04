@@ -1,6 +1,6 @@
 cd /root/Pai-Megatron-Patch/examples/qwen2_5
 sh run_mcore_qwen.sh  \
-dsw  \
+aliyunecs  \
 0.5B   \
 1    \
 8 \
