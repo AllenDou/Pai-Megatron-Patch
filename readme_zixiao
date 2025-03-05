@@ -6,3 +6,6 @@
 同时删除 b/examples/qwen2_5/run_mcore_qwen.sh的 
 --no-load-optim 和 --no-save-optim
 
+数据处理见
+https://github.com/alibaba/Pai-Megatron-Patch/blob/main/toolkits/pretrain_data_preprocessing/README.md
+
