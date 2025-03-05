@@ -9,3 +9,7 @@
 数据处理见
 https://github.com/alibaba/Pai-Megatron-Patch/blob/main/toolkits/pretrain_data_preprocessing/README.md
 
+       convert          pretrain/sft
+hf_ckpt ---> megatron_ckpt ---> megatron_ckpt ---> hf_ckpt ---> vllm
+
+megatron的pretrain/sft只是加速训练, 其实还需要hf的tokenizer.json等多个文件, 所以 pretrain会有cp json等动作.
