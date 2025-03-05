@@ -18,7 +18,7 @@ true \
 false \
 false   \
 false \
-100000  \
+2  \
 /nasmnt/megatron/qwen-datasets/wudao_qwenbpe_text_document  \
 /nasmnt/megatron/qwen-datasets/wudao_qwenbpe_text_document  \
 /nasmnt/megatron/qwen-ckpts/Qwen2.5-0.5B-hf-to-mcore-te-tp1-pp1  \
