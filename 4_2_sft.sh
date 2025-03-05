@@ -19,8 +19,8 @@ true \
 false   \
 false \
 100000  \
-/nasmnt/megatron/qwen-datasets/path_to_your_dataset   \
-/nasmnt/megatron/qwen-datasets/path_to_your_dataset   \
+/nasmnt/megatron/qwen-datasets/wudao_qwenbpe_text_document  \
+/nasmnt/megatron/qwen-datasets/wudao_qwenbpe_text_document  \
 /nasmnt/megatron/output_mcore_qwen2.5_pretrain/checkpoint/pretrain-mcore-qwen2.5-0.5B-lr-1e-5-minlr-1e-6-bs-1-gbs-8-seqlen-128-pr-bf16-tp-1-pp-1-cp-1-ac-false-do-true-sp-true-ti-9-wi-0/ \
 10000  \
 100   \
