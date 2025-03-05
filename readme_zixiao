@@ -1,0 +1,8 @@
+
+如果是断点续训, load ckpt时会报错, 需要修改 PAI-Megatron-LM-240718/megatron/training/checkpointing.py 607行 
+-        state_dict = torch.load(checkpoint_name, map_location='cpu')
++        state_dict = torch.load(checkpoint_name, map_location='cpu', weights_only=False)
+
+同时删除 b/examples/qwen2_5/run_mcore_qwen.sh的 
+--no-load-optim 和 --no-save-optim
+
