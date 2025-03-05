@@ -3,6 +3,8 @@
 -        state_dict = torch.load(checkpoint_name, map_location='cpu')
 +        state_dict = torch.load(checkpoint_name, map_location='cpu', weights_only=False)
 
+PAI-Megatron-LM-240718 是@同润维护的megatron-lm
+
 同时删除 b/examples/qwen2_5/run_mcore_qwen.sh的 
 --no-load-optim 和 --no-save-optim
 
